@@ -11,7 +11,6 @@
 		48881BE029056D5A0096FAF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881BDF29056D5A0096FAF8 /* SceneDelegate.swift */; };
 		48881BE729056D5D0096FAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48881BE629056D5D0096FAF8 /* Assets.xcassets */; };
 		48881BEA29056D5D0096FAF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48881BE829056D5D0096FAF8 /* LaunchScreen.storyboard */; };
-		48881BF529056D5D0096FAF8 /* zemogaMobileiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881BF429056D5D0096FAF8 /* zemogaMobileiOSTests.swift */; };
 		48881BFF29056D5D0096FAF8 /* zemogaMobileiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881BFE29056D5D0096FAF8 /* zemogaMobileiOSUITests.swift */; };
 		48881C0129056D5D0096FAF8 /* zemogaMobileiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C0029056D5D0096FAF8 /* zemogaMobileiOSUITestsLaunchTests.swift */; };
 		48881C1E290573D30096FAF8 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C1C290573D20096FAF8 /* Mapper.swift */; };
@@ -49,6 +48,11 @@
 		48881C64290574710096FAF8 /* UserDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C5C2905746F0096FAF8 /* UserDetailRouter.swift */; };
 		48881C65290574710096FAF8 /* UserDetailConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C5D290574700096FAF8 /* UserDetailConfiguration.swift */; };
 		48881C66290574710096FAF8 /* UserDetailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C5E290574710096FAF8 /* UserDetailManager.swift */; };
+		48881C6C29057C550096FAF8 /* HomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C6B29057C550096FAF8 /* HomeTests.swift */; };
+		48881C6F29057C5C0096FAF8 /* HomeManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C6D29057C5B0096FAF8 /* HomeManagerMock.swift */; };
+		48881C7029057C5C0096FAF8 /* HomePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C6E29057C5C0096FAF8 /* HomePresenterMock.swift */; };
+		48881C7229057C700096FAF8 /* PostDetailTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C7129057C6F0096FAF8 /* PostDetailTest.swift */; };
+		48881C7429057C790096FAF8 /* UserDetailTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C7329057C790096FAF8 /* UserDetailTest.swift */; };
 		6B93C043CA35F089ADB0B6AA /* Pods_zemogaMobileiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51BBB27F9975EF8B37762B2 /* Pods_zemogaMobileiOSTests.framework */; };
 		AD7C379B680746781227D85A /* Pods_zemogaMobileiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA4D92B7E8CD2C8DA4DCA1 /* Pods_zemogaMobileiOS.framework */; };
 		CE8DE6E923391A2299A62261 /* Pods_zemogaMobileiOS_zemogaMobileiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C510DA2993709FFE1FE63 /* Pods_zemogaMobileiOS_zemogaMobileiOSUITests.framework */; };
@@ -80,7 +84,6 @@
 		48881BE929056D5D0096FAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48881BEB29056D5D0096FAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48881BF029056D5D0096FAF8 /* zemogaMobileiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zemogaMobileiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48881BF429056D5D0096FAF8 /* zemogaMobileiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zemogaMobileiOSTests.swift; sourceTree = "<group>"; };
 		48881BFA29056D5D0096FAF8 /* zemogaMobileiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zemogaMobileiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48881BFE29056D5D0096FAF8 /* zemogaMobileiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zemogaMobileiOSUITests.swift; sourceTree = "<group>"; };
 		48881C0029056D5D0096FAF8 /* zemogaMobileiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zemogaMobileiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -119,6 +122,11 @@
 		48881C5C2905746F0096FAF8 /* UserDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailRouter.swift; sourceTree = "<group>"; };
 		48881C5D290574700096FAF8 /* UserDetailConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailConfiguration.swift; sourceTree = "<group>"; };
 		48881C5E290574710096FAF8 /* UserDetailManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailManager.swift; sourceTree = "<group>"; };
+		48881C6B29057C550096FAF8 /* HomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTests.swift; sourceTree = "<group>"; };
+		48881C6D29057C5B0096FAF8 /* HomeManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeManagerMock.swift; sourceTree = "<group>"; };
+		48881C6E29057C5C0096FAF8 /* HomePresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterMock.swift; sourceTree = "<group>"; };
+		48881C7129057C6F0096FAF8 /* PostDetailTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailTest.swift; sourceTree = "<group>"; };
+		48881C7329057C790096FAF8 /* UserDetailTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTest.swift; sourceTree = "<group>"; };
 		50AC4EA7B5A9ED6D27FA2EBF /* Pods-zemogaMobileiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogaMobileiOS.release.xcconfig"; path = "Target Support Files/Pods-zemogaMobileiOS/Pods-zemogaMobileiOS.release.xcconfig"; sourceTree = "<group>"; };
 		56AA4D92B7E8CD2C8DA4DCA1 /* Pods_zemogaMobileiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zemogaMobileiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		681C510DA2993709FFE1FE63 /* Pods_zemogaMobileiOS_zemogaMobileiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zemogaMobileiOS_zemogaMobileiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +205,9 @@
 		48881BF329056D5D0096FAF8 /* zemogaMobileiOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				48881BF429056D5D0096FAF8 /* zemogaMobileiOSTests.swift */,
+				48881C6929057C290096FAF8 /* Home */,
+				48881C6829057C230096FAF8 /* PostDetail */,
+				48881C6729057C050096FAF8 /* UserDetail */,
 			);
 			path = zemogaMobileiOSTests;
 			sourceTree = "<group>";
@@ -307,6 +317,40 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		48881C6729057C050096FAF8 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				48881C7329057C790096FAF8 /* UserDetailTest.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		48881C6829057C230096FAF8 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				48881C7129057C6F0096FAF8 /* PostDetailTest.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		48881C6929057C290096FAF8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				48881C6B29057C550096FAF8 /* HomeTests.swift */,
+				48881C6A29057C3E0096FAF8 /* Mock */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		48881C6A29057C3E0096FAF8 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				48881C6D29057C5B0096FAF8 /* HomeManagerMock.swift */,
+				48881C6E29057C5C0096FAF8 /* HomePresenterMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		ADC0572B57808857C028715B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +450,7 @@
 					};
 					48881BEF29056D5D0096FAF8 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 						TestTargetID = 48881BD929056D5A0096FAF8;
 					};
 					48881BF929056D5D0096FAF8 = {
@@ -612,7 +657,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48881BF529056D5D0096FAF8 /* zemogaMobileiOSTests.swift in Sources */,
+				48881C7229057C700096FAF8 /* PostDetailTest.swift in Sources */,
+				48881C7029057C5C0096FAF8 /* HomePresenterMock.swift in Sources */,
+				48881C6F29057C5C0096FAF8 /* HomeManagerMock.swift in Sources */,
+				48881C7429057C790096FAF8 /* UserDetailTest.swift in Sources */,
+				48881C6C29057C550096FAF8 /* HomeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,15 +883,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 28UNC76MDZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmyerston.zemogaMobileiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/zemogaMobileiOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/zemogaMobileiOS";
@@ -855,11 +911,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 28UNC76MDZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmyerston.zemogaMobileiOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
