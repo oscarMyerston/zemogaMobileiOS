@@ -30,26 +30,27 @@ class HomeInteractor: IHomeInteractor {
     func loadPost() {
         manager?.fetchPostsFromLocalDB() { response in
             switch response {
-            case .success(let result):
-                if let data: [HomeModel.HomePost] = result as? [HomeModel.HomePost] {
-                    if !data.isEmpty {
-                        self.presenter?.posts(parameters: data)
-                    } else {
-                        self.getPosts()
+                case .success(let result):
+                    if let data: [HomeModel.HomePost] = result as? [HomeModel.HomePost] {
+                        if !data.isEmpty {
+                            DispatchQueue.main.async {
+                                self.presenter?.posts(parameters: data)
+                            }
+                        } else {
+                            DispatchQueue.main.async {
+                                self.getPosts()
+                            }
+                        }
                     }
-                }
-            case .failure(let error):
-                switch error {
-                case .internalError:
-                    debugPrint("error: \(error)")
-                    self.presenter?.showError(message: "A error ocurred, try later")
-                case .serverError:
-                    self.presenter?.showError(message: "Can't connect with server, please check internet connection.")
-                    debugPrint("error: \(error)")
-                case .requestError:
-                    self.presenter?.showError(message: "Please contact with admin")
-                    debugPrint("error: \(error)")
-                }
+                case .failure(let error):
+                    switch error {
+                    case .internalError:
+                        self.presenter?.showError(message: "A error ocurred, try later")
+                    case .serverError:
+                        self.presenter?.showError(message: "Can't connect with server, please check internet connection.")
+                    case .requestError:
+                        self.presenter?.showError(message: "Please contact with admin")
+                    }
             }
             self.presenter?.loadingHide()
         }
@@ -58,31 +59,28 @@ class HomeInteractor: IHomeInteractor {
 
     func getPosts() {
         self.manager?.getPosts { response in
-            debugPrint("response: \(response)")
             switch response {
             case .success(let result):
                 if let data: [HomeModel.HomePost] = result as? [HomeModel.HomePost] {
                     if !data.isEmpty {
-                        self.presenter?.posts(parameters: data)
+                        DispatchQueue.main.async {
+                            self.presenter?.posts(parameters: data)
+                        }
                         DispatchQueue.main.async {
                           _ = data.map({
                                 self.addPostsToDB(with: $0)
                             })
                         }
                     }
-                    debugPrint("data: \(data)")
                 }
             case .failure(let error):
                 switch error {
                 case .internalError:
-                    debugPrint("error: \(error)")
                     self.presenter?.showError(message: "A error ocurred, try later")
                 case .serverError:
                     self.presenter?.showError(message: "Can't connect with server, please check internet connection.")
-                    debugPrint("error: \(error)")
                 case .requestError:
                     self.presenter?.showError(message: "Please contact with admin")
-                    debugPrint("error: \(error)")
                 }
             }
             self.presenter?.loadingHide()

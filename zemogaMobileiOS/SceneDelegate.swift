@@ -17,12 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window?.overrideUserInterfaceStyle = .light
         let navigationController = UINavigationController(rootViewController: HomeConfiguration.setup())
-        window?.rootViewController = navigationController
-        UIView.transition(with: window!,
-                          duration: 0.3,
-                          options: .transitionCrossDissolve,
-                          animations: nil,
-                          completion: nil)
+        setRootViewController(navigationController)
         window?.makeKeyAndVisible()
     }
     
@@ -68,7 +63,7 @@ extension SceneDelegate {
           window.rootViewController = vc
           window.makeKeyAndVisible()
           UIView.transition(with: window,
-                            duration: 0.3,
+                            duration: 3,
                             options: .transitionCrossDissolve,
                             animations: nil,
                             completion: nil)

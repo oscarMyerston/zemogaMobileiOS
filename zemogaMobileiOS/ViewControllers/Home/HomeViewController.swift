@@ -26,16 +26,13 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        loadPosts()
+        showLoading(to: view)
         configureNavigation()
 
     }
 
     override func viewWillAppear(_ animated: Bool) {
-
-        if posts.isEmpty {
-            showLoading(to: view)
-        }
+        loadPosts()
     }
 
     private func loadPosts() {
