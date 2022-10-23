@@ -1,0 +1,6 @@
+framework module Pods_zemogaMobileiOS_zemogaMobileiOSUITests {
+  umbrella header "Pods-zemogaMobileiOS-zemogaMobileiOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

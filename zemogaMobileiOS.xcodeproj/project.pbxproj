@@ -9,13 +9,49 @@
 /* Begin PBXBuildFile section */
 		48881BDE29056D5A0096FAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881BDD29056D5A0096FAF8 /* AppDelegate.swift */; };
 		48881BE029056D5A0096FAF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881BDF29056D5A0096FAF8 /* SceneDelegate.swift */; };
-		48881BE229056D5A0096FAF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881BE129056D5A0096FAF8 /* ViewController.swift */; };
-		48881BE529056D5A0096FAF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48881BE329056D5A0096FAF8 /* Main.storyboard */; };
 		48881BE729056D5D0096FAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48881BE629056D5D0096FAF8 /* Assets.xcassets */; };
 		48881BEA29056D5D0096FAF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48881BE829056D5D0096FAF8 /* LaunchScreen.storyboard */; };
 		48881BF529056D5D0096FAF8 /* zemogaMobileiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881BF429056D5D0096FAF8 /* zemogaMobileiOSTests.swift */; };
 		48881BFF29056D5D0096FAF8 /* zemogaMobileiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881BFE29056D5D0096FAF8 /* zemogaMobileiOSUITests.swift */; };
 		48881C0129056D5D0096FAF8 /* zemogaMobileiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C0029056D5D0096FAF8 /* zemogaMobileiOSUITestsLaunchTests.swift */; };
+		48881C1E290573D30096FAF8 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C1C290573D20096FAF8 /* Mapper.swift */; };
+		48881C1F290573D30096FAF8 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C1D290573D30096FAF8 /* Defaults.swift */; };
+		48881C25290573E70096FAF8 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C20290573E10096FAF8 /* JSONHelper.swift */; };
+		48881C26290573E70096FAF8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C21290573E20096FAF8 /* Extensions.swift */; };
+		48881C27290573E70096FAF8 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C22290573E40096FAF8 /* RealmManager.swift */; };
+		48881C28290573E70096FAF8 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C23290573E50096FAF8 /* Connection.swift */; };
+		48881C29290573E70096FAF8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C24290573E60096FAF8 /* Endpoint.swift */; };
+		48881C352905741A0096FAF8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48881C2D290574150096FAF8 /* HomeViewController.xib */; };
+		48881C362905741A0096FAF8 /* HomeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C2E290574150096FAF8 /* HomeConfiguration.swift */; };
+		48881C372905741A0096FAF8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C2F290574160096FAF8 /* HomeViewController.swift */; };
+		48881C382905741A0096FAF8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C30290574170096FAF8 /* HomePresenter.swift */; };
+		48881C392905741A0096FAF8 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C31290574170096FAF8 /* HomeInteractor.swift */; };
+		48881C3A2905741A0096FAF8 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C32290574180096FAF8 /* HomeModel.swift */; };
+		48881C3B2905741A0096FAF8 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C33290574190096FAF8 /* HomeRouter.swift */; };
+		48881C3C2905741A0096FAF8 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C34290574190096FAF8 /* HomeManager.swift */; };
+		48881C402905742B0096FAF8 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48881C3E2905742A0096FAF8 /* PostTableViewCell.xib */; };
+		48881C412905742B0096FAF8 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C3F2905742A0096FAF8 /* PostTableViewCell.swift */; };
+		48881C4A290574400096FAF8 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C422905743B0096FAF8 /* PostDetailViewController.swift */; };
+		48881C4B290574400096FAF8 /* PostDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C432905743C0096FAF8 /* PostDetailRouter.swift */; };
+		48881C4C290574400096FAF8 /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C442905743C0096FAF8 /* PostDetailPresenter.swift */; };
+		48881C4D290574400096FAF8 /* PostDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C452905743D0096FAF8 /* PostDetailInteractor.swift */; };
+		48881C4E290574400096FAF8 /* PostDetailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C462905743E0096FAF8 /* PostDetailManager.swift */; };
+		48881C4F290574400096FAF8 /* PostDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C472905743E0096FAF8 /* PostDetailModel.swift */; };
+		48881C50290574400096FAF8 /* PostDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48881C482905743F0096FAF8 /* PostDetailViewController.xib */; };
+		48881C51290574400096FAF8 /* PostDetailConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C492905743F0096FAF8 /* PostDetailConfiguration.swift */; };
+		48881C552905745B0096FAF8 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C532905745A0096FAF8 /* CommentTableViewCell.swift */; };
+		48881C562905745B0096FAF8 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48881C542905745B0096FAF8 /* CommentTableViewCell.xib */; };
+		48881C5F290574710096FAF8 /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C572905746C0096FAF8 /* UserDetailModel.swift */; };
+		48881C60290574710096FAF8 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C582905746D0096FAF8 /* UserDetailViewController.swift */; };
+		48881C61290574710096FAF8 /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C592905746E0096FAF8 /* UserDetailPresenter.swift */; };
+		48881C62290574710096FAF8 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48881C5A2905746E0096FAF8 /* UserDetailViewController.xib */; };
+		48881C63290574710096FAF8 /* UserDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C5B2905746F0096FAF8 /* UserDetailInteractor.swift */; };
+		48881C64290574710096FAF8 /* UserDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C5C2905746F0096FAF8 /* UserDetailRouter.swift */; };
+		48881C65290574710096FAF8 /* UserDetailConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C5D290574700096FAF8 /* UserDetailConfiguration.swift */; };
+		48881C66290574710096FAF8 /* UserDetailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48881C5E290574710096FAF8 /* UserDetailManager.swift */; };
+		6B93C043CA35F089ADB0B6AA /* Pods_zemogaMobileiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51BBB27F9975EF8B37762B2 /* Pods_zemogaMobileiOSTests.framework */; };
+		AD7C379B680746781227D85A /* Pods_zemogaMobileiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA4D92B7E8CD2C8DA4DCA1 /* Pods_zemogaMobileiOS.framework */; };
+		CE8DE6E923391A2299A62261 /* Pods_zemogaMobileiOS_zemogaMobileiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681C510DA2993709FFE1FE63 /* Pods_zemogaMobileiOS_zemogaMobileiOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +72,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097CE325D5D50F88F6DEA4EE /* Pods-zemogaMobileiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogaMobileiOS.debug.xcconfig"; path = "Target Support Files/Pods-zemogaMobileiOS/Pods-zemogaMobileiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		48881BDA29056D5A0096FAF8 /* zemogaMobileiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zemogaMobileiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48881BDD29056D5A0096FAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48881BDF29056D5A0096FAF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48881BE129056D5A0096FAF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		48881BE429056D5A0096FAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48881BE629056D5D0096FAF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48881BE929056D5D0096FAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48881BEB29056D5D0096FAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +84,49 @@
 		48881BFA29056D5D0096FAF8 /* zemogaMobileiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zemogaMobileiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48881BFE29056D5D0096FAF8 /* zemogaMobileiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zemogaMobileiOSUITests.swift; sourceTree = "<group>"; };
 		48881C0029056D5D0096FAF8 /* zemogaMobileiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zemogaMobileiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		48881C1C290573D20096FAF8 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		48881C1D290573D30096FAF8 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		48881C20290573E10096FAF8 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		48881C21290573E20096FAF8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		48881C22290573E40096FAF8 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		48881C23290573E50096FAF8 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		48881C24290573E60096FAF8 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		48881C2D290574150096FAF8 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		48881C2E290574150096FAF8 /* HomeConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeConfiguration.swift; sourceTree = "<group>"; };
+		48881C2F290574160096FAF8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		48881C30290574170096FAF8 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		48881C31290574170096FAF8 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		48881C32290574180096FAF8 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		48881C33290574190096FAF8 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		48881C34290574190096FAF8 /* HomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
+		48881C3E2905742A0096FAF8 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		48881C3F2905742A0096FAF8 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		48881C422905743B0096FAF8 /* PostDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		48881C432905743C0096FAF8 /* PostDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailRouter.swift; sourceTree = "<group>"; };
+		48881C442905743C0096FAF8 /* PostDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
+		48881C452905743D0096FAF8 /* PostDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInteractor.swift; sourceTree = "<group>"; };
+		48881C462905743E0096FAF8 /* PostDetailManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailManager.swift; sourceTree = "<group>"; };
+		48881C472905743E0096FAF8 /* PostDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailModel.swift; sourceTree = "<group>"; };
+		48881C482905743F0096FAF8 /* PostDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostDetailViewController.xib; sourceTree = "<group>"; };
+		48881C492905743F0096FAF8 /* PostDetailConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailConfiguration.swift; sourceTree = "<group>"; };
+		48881C532905745A0096FAF8 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		48881C542905745B0096FAF8 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		48881C572905746C0096FAF8 /* UserDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
+		48881C582905746D0096FAF8 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		48881C592905746E0096FAF8 /* UserDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
+		48881C5A2905746E0096FAF8 /* UserDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
+		48881C5B2905746F0096FAF8 /* UserDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailInteractor.swift; sourceTree = "<group>"; };
+		48881C5C2905746F0096FAF8 /* UserDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailRouter.swift; sourceTree = "<group>"; };
+		48881C5D290574700096FAF8 /* UserDetailConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailConfiguration.swift; sourceTree = "<group>"; };
+		48881C5E290574710096FAF8 /* UserDetailManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailManager.swift; sourceTree = "<group>"; };
+		50AC4EA7B5A9ED6D27FA2EBF /* Pods-zemogaMobileiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogaMobileiOS.release.xcconfig"; path = "Target Support Files/Pods-zemogaMobileiOS/Pods-zemogaMobileiOS.release.xcconfig"; sourceTree = "<group>"; };
+		56AA4D92B7E8CD2C8DA4DCA1 /* Pods_zemogaMobileiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zemogaMobileiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		681C510DA2993709FFE1FE63 /* Pods_zemogaMobileiOS_zemogaMobileiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zemogaMobileiOS_zemogaMobileiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		748B1530E18362AED6F8EEFD /* Pods-zemogaMobileiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogaMobileiOSTests.release.xcconfig"; path = "Target Support Files/Pods-zemogaMobileiOSTests/Pods-zemogaMobileiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		8DD953E71425E6EE86FBC2B6 /* Pods-zemogaMobileiOS-zemogaMobileiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogaMobileiOS-zemogaMobileiOSUITests.release.xcconfig"; path = "Target Support Files/Pods-zemogaMobileiOS-zemogaMobileiOSUITests/Pods-zemogaMobileiOS-zemogaMobileiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A51BBB27F9975EF8B37762B2 /* Pods_zemogaMobileiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zemogaMobileiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF5ED8E9A7B41FCDB8E0ABC /* Pods-zemogaMobileiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogaMobileiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-zemogaMobileiOSTests/Pods-zemogaMobileiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2837DA068539210E102A954 /* Pods-zemogaMobileiOS-zemogaMobileiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zemogaMobileiOS-zemogaMobileiOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-zemogaMobileiOS-zemogaMobileiOSUITests/Pods-zemogaMobileiOS-zemogaMobileiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7C379B680746781227D85A /* Pods_zemogaMobileiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B93C043CA35F089ADB0B6AA /* Pods_zemogaMobileiOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8DE6E923391A2299A62261 /* Pods_zemogaMobileiOS_zemogaMobileiOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +164,8 @@
 				48881BF329056D5D0096FAF8 /* zemogaMobileiOSTests */,
 				48881BFD29056D5D0096FAF8 /* zemogaMobileiOSUITests */,
 				48881BDB29056D5A0096FAF8 /* Products */,
+				E60F2BC70C8FE62D8E15E26D /* Pods */,
+				ADC0572B57808857C028715B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +182,11 @@
 		48881BDC29056D5A0096FAF8 /* zemogaMobileiOS */ = {
 			isa = PBXGroup;
 			children = (
+				48881C1B290573B40096FAF8 /* ViewControllers */,
+				48881C1A290573A90096FAF8 /* Services */,
+				48881C192905739E0096FAF8 /* Core */,
 				48881BDD29056D5A0096FAF8 /* AppDelegate.swift */,
 				48881BDF29056D5A0096FAF8 /* SceneDelegate.swift */,
-				48881BE129056D5A0096FAF8 /* ViewController.swift */,
-				48881BE329056D5A0096FAF8 /* Main.storyboard */,
 				48881BE629056D5D0096FAF8 /* Assets.xcassets */,
 				48881BE829056D5D0096FAF8 /* LaunchScreen.storyboard */,
 				48881BEB29056D5D0096FAF8 /* Info.plist */,
@@ -127,6 +211,125 @@
 			path = zemogaMobileiOSUITests;
 			sourceTree = "<group>";
 		};
+		48881C192905739E0096FAF8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				48881C1D290573D30096FAF8 /* Defaults.swift */,
+				48881C1C290573D20096FAF8 /* Mapper.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		48881C1A290573A90096FAF8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				48881C23290573E50096FAF8 /* Connection.swift */,
+				48881C24290573E60096FAF8 /* Endpoint.swift */,
+				48881C21290573E20096FAF8 /* Extensions.swift */,
+				48881C20290573E10096FAF8 /* JSONHelper.swift */,
+				48881C22290573E40096FAF8 /* RealmManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		48881C1B290573B40096FAF8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				48881C2C290573F80096FAF8 /* UserDetail */,
+				48881C2B290573F10096FAF8 /* PostDetail */,
+				48881C2A290573EC0096FAF8 /* Home */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		48881C2A290573EC0096FAF8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				48881C3D2905741F0096FAF8 /* Cell */,
+				48881C2E290574150096FAF8 /* HomeConfiguration.swift */,
+				48881C31290574170096FAF8 /* HomeInteractor.swift */,
+				48881C34290574190096FAF8 /* HomeManager.swift */,
+				48881C32290574180096FAF8 /* HomeModel.swift */,
+				48881C30290574170096FAF8 /* HomePresenter.swift */,
+				48881C33290574190096FAF8 /* HomeRouter.swift */,
+				48881C2F290574160096FAF8 /* HomeViewController.swift */,
+				48881C2D290574150096FAF8 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		48881C2B290573F10096FAF8 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				48881C522905744F0096FAF8 /* Cell */,
+				48881C492905743F0096FAF8 /* PostDetailConfiguration.swift */,
+				48881C452905743D0096FAF8 /* PostDetailInteractor.swift */,
+				48881C462905743E0096FAF8 /* PostDetailManager.swift */,
+				48881C472905743E0096FAF8 /* PostDetailModel.swift */,
+				48881C442905743C0096FAF8 /* PostDetailPresenter.swift */,
+				48881C432905743C0096FAF8 /* PostDetailRouter.swift */,
+				48881C422905743B0096FAF8 /* PostDetailViewController.swift */,
+				48881C482905743F0096FAF8 /* PostDetailViewController.xib */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		48881C2C290573F80096FAF8 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				48881C5D290574700096FAF8 /* UserDetailConfiguration.swift */,
+				48881C5B2905746F0096FAF8 /* UserDetailInteractor.swift */,
+				48881C5E290574710096FAF8 /* UserDetailManager.swift */,
+				48881C572905746C0096FAF8 /* UserDetailModel.swift */,
+				48881C592905746E0096FAF8 /* UserDetailPresenter.swift */,
+				48881C5C2905746F0096FAF8 /* UserDetailRouter.swift */,
+				48881C582905746D0096FAF8 /* UserDetailViewController.swift */,
+				48881C5A2905746E0096FAF8 /* UserDetailViewController.xib */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
+		48881C3D2905741F0096FAF8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				48881C3F2905742A0096FAF8 /* PostTableViewCell.swift */,
+				48881C3E2905742A0096FAF8 /* PostTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		48881C522905744F0096FAF8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				48881C532905745A0096FAF8 /* CommentTableViewCell.swift */,
+				48881C542905745B0096FAF8 /* CommentTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ADC0572B57808857C028715B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56AA4D92B7E8CD2C8DA4DCA1 /* Pods_zemogaMobileiOS.framework */,
+				681C510DA2993709FFE1FE63 /* Pods_zemogaMobileiOS_zemogaMobileiOSUITests.framework */,
+				A51BBB27F9975EF8B37762B2 /* Pods_zemogaMobileiOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E60F2BC70C8FE62D8E15E26D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				097CE325D5D50F88F6DEA4EE /* Pods-zemogaMobileiOS.debug.xcconfig */,
+				50AC4EA7B5A9ED6D27FA2EBF /* Pods-zemogaMobileiOS.release.xcconfig */,
+				C2837DA068539210E102A954 /* Pods-zemogaMobileiOS-zemogaMobileiOSUITests.debug.xcconfig */,
+				8DD953E71425E6EE86FBC2B6 /* Pods-zemogaMobileiOS-zemogaMobileiOSUITests.release.xcconfig */,
+				ACF5ED8E9A7B41FCDB8E0ABC /* Pods-zemogaMobileiOSTests.debug.xcconfig */,
+				748B1530E18362AED6F8EEFD /* Pods-zemogaMobileiOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +337,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48881C0429056D5D0096FAF8 /* Build configuration list for PBXNativeTarget "zemogaMobileiOS" */;
 			buildPhases = (
+				568F44BFC0681E9EA5EB9CFE /* [CP] Check Pods Manifest.lock */,
 				48881BD629056D5A0096FAF8 /* Sources */,
 				48881BD729056D5A0096FAF8 /* Frameworks */,
 				48881BD829056D5A0096FAF8 /* Resources */,
+				2DEC7C57A930338DED26C52F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +356,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48881C0729056D5D0096FAF8 /* Build configuration list for PBXNativeTarget "zemogaMobileiOSTests" */;
 			buildPhases = (
+				EF179438FEA25880FE5F519C /* [CP] Check Pods Manifest.lock */,
 				48881BEC29056D5D0096FAF8 /* Sources */,
 				48881BED29056D5D0096FAF8 /* Frameworks */,
 				48881BEE29056D5D0096FAF8 /* Resources */,
@@ -169,9 +375,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48881C0A29056D5D0096FAF8 /* Build configuration list for PBXNativeTarget "zemogaMobileiOSUITests" */;
 			buildPhases = (
+				CAB20FD08570D7BE441C113F /* [CP] Check Pods Manifest.lock */,
 				48881BF629056D5D0096FAF8 /* Sources */,
 				48881BF729056D5D0096FAF8 /* Frameworks */,
 				48881BF829056D5D0096FAF8 /* Resources */,
+				78DF5DE897A28853487983A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +440,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				48881BEA29056D5D0096FAF8 /* LaunchScreen.storyboard in Resources */,
+				48881C562905745B0096FAF8 /* CommentTableViewCell.xib in Resources */,
 				48881BE729056D5D0096FAF8 /* Assets.xcassets in Resources */,
-				48881BE529056D5A0096FAF8 /* Main.storyboard in Resources */,
+				48881C50290574400096FAF8 /* PostDetailViewController.xib in Resources */,
+				48881C352905741A0096FAF8 /* HomeViewController.xib in Resources */,
+				48881C62290574710096FAF8 /* UserDetailViewController.xib in Resources */,
+				48881C402905742B0096FAF8 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +465,146 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DEC7C57A930338DED26C52F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zemogaMobileiOS/Pods-zemogaMobileiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zemogaMobileiOS/Pods-zemogaMobileiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zemogaMobileiOS/Pods-zemogaMobileiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		568F44BFC0681E9EA5EB9CFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zemogaMobileiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78DF5DE897A28853487983A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zemogaMobileiOS-zemogaMobileiOSUITests/Pods-zemogaMobileiOS-zemogaMobileiOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zemogaMobileiOS-zemogaMobileiOSUITests/Pods-zemogaMobileiOS-zemogaMobileiOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zemogaMobileiOS-zemogaMobileiOSUITests/Pods-zemogaMobileiOS-zemogaMobileiOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAB20FD08570D7BE441C113F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zemogaMobileiOS-zemogaMobileiOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF179438FEA25880FE5F519C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zemogaMobileiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48881BD629056D5A0096FAF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48881BE229056D5A0096FAF8 /* ViewController.swift in Sources */,
+				48881C4F290574400096FAF8 /* PostDetailModel.swift in Sources */,
+				48881C51290574400096FAF8 /* PostDetailConfiguration.swift in Sources */,
+				48881C552905745B0096FAF8 /* CommentTableViewCell.swift in Sources */,
+				48881C3C2905741A0096FAF8 /* HomeManager.swift in Sources */,
 				48881BDE29056D5A0096FAF8 /* AppDelegate.swift in Sources */,
+				48881C412905742B0096FAF8 /* PostTableViewCell.swift in Sources */,
+				48881C29290573E70096FAF8 /* Endpoint.swift in Sources */,
+				48881C26290573E70096FAF8 /* Extensions.swift in Sources */,
+				48881C382905741A0096FAF8 /* HomePresenter.swift in Sources */,
+				48881C3B2905741A0096FAF8 /* HomeRouter.swift in Sources */,
+				48881C61290574710096FAF8 /* UserDetailPresenter.swift in Sources */,
+				48881C1F290573D30096FAF8 /* Defaults.swift in Sources */,
+				48881C60290574710096FAF8 /* UserDetailViewController.swift in Sources */,
+				48881C65290574710096FAF8 /* UserDetailConfiguration.swift in Sources */,
+				48881C4E290574400096FAF8 /* PostDetailManager.swift in Sources */,
+				48881C28290573E70096FAF8 /* Connection.swift in Sources */,
+				48881C5F290574710096FAF8 /* UserDetailModel.swift in Sources */,
+				48881C1E290573D30096FAF8 /* Mapper.swift in Sources */,
+				48881C392905741A0096FAF8 /* HomeInteractor.swift in Sources */,
 				48881BE029056D5A0096FAF8 /* SceneDelegate.swift in Sources */,
+				48881C372905741A0096FAF8 /* HomeViewController.swift in Sources */,
+				48881C63290574710096FAF8 /* UserDetailInteractor.swift in Sources */,
+				48881C4A290574400096FAF8 /* PostDetailViewController.swift in Sources */,
+				48881C3A2905741A0096FAF8 /* HomeModel.swift in Sources */,
+				48881C27290573E70096FAF8 /* RealmManager.swift in Sources */,
+				48881C25290573E70096FAF8 /* JSONHelper.swift in Sources */,
+				48881C4D290574400096FAF8 /* PostDetailInteractor.swift in Sources */,
+				48881C4C290574400096FAF8 /* PostDetailPresenter.swift in Sources */,
+				48881C362905741A0096FAF8 /* HomeConfiguration.swift in Sources */,
+				48881C64290574710096FAF8 /* UserDetailRouter.swift in Sources */,
+				48881C4B290574400096FAF8 /* PostDetailRouter.swift in Sources */,
+				48881C66290574710096FAF8 /* UserDetailManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +641,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		48881BE329056D5A0096FAF8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48881BE429056D5A0096FAF8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		48881BE829056D5D0096FAF8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +768,7 @@
 		};
 		48881C0529056D5D0096FAF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 097CE325D5D50F88F6DEA4EE /* Pods-zemogaMobileiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,9 +779,8 @@
 				INFOPLIST_FILE = zemogaMobileiOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,14 +788,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmyerston.zemogaMobileiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		48881C0629056D5D0096FAF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50AC4EA7B5A9ED6D27FA2EBF /* Pods-zemogaMobileiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,9 +810,8 @@
 				INFOPLIST_FILE = zemogaMobileiOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,14 +819,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmyerston.zemogaMobileiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		48881C0829056D5D0096FAF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF5ED8E9A7B41FCDB8E0ABC /* Pods-zemogaMobileiOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +851,7 @@
 		};
 		48881C0929056D5D0096FAF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748B1530E18362AED6F8EEFD /* Pods-zemogaMobileiOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +872,7 @@
 		};
 		48881C0B29056D5D0096FAF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2837DA068539210E102A954 /* Pods-zemogaMobileiOS-zemogaMobileiOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +891,7 @@
 		};
 		48881C0C29056D5D0096FAF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD953E71425E6EE86FBC2B6 /* Pods-zemogaMobileiOS-zemogaMobileiOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
