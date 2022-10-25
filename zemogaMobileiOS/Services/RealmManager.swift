@@ -55,7 +55,11 @@ class RealmManager {
     func removeAllPosts(posts: [HomeModel.HomePost]) {
         do {
             try realm.write {
-                realm.deleteAll()
+                let postsDelete = realm.objects(PostLocal.self).where {
+                        $0.isFav == false
+                    }
+                realm.delete(postsDelete)
+
             }
         } catch let error {
             print("Error Deleted all posts Realm: \(error.localizedDescription)")

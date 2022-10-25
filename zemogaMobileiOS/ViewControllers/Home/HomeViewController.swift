@@ -53,10 +53,8 @@ class HomeViewController: UIViewController {
     }
 
     @objc func loadAllPost() {
-        if posts.isEmpty {
             showLoading(to: view)
             interactor?.loadPost()
-        }
     }
 
     @objc func deleteAll() {
@@ -66,7 +64,7 @@ class HomeViewController: UIViewController {
     }
 
     private func removeAll() {
-        self.posts.removeAll()
+        self.posts.removeAll { $0.isFav == false }
         tableView.reloadData()
     }
 

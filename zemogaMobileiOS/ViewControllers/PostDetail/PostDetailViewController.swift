@@ -87,7 +87,7 @@ extension PostDetailViewController {
         if post != nil {
             self.titleLabel?.text = post.title
             self.bodyLabel?.text = post.body
-            self.favoriteButton.isSelected = post.isFav!
+            self.favoriteButton.isSelected = post.isFav ?? false
         }
     }
 
