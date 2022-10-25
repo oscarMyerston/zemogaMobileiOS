@@ -25,6 +25,8 @@ class PostDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
     @IBOutlet weak var userButton: UIButton!
+    @IBOutlet weak var favoriteButton: UIButton!
+
     @IBOutlet weak var likeImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
 
@@ -37,6 +39,14 @@ class PostDetailViewController: UIViewController {
         loadUserInfo()
         configureButton()
 
+        favoriteButton.addTarget(self, action: #selector(buttonTapped) , for: .primaryActionTriggered)
+
+    }
+
+    @objc func buttonTapped(_ sender: UIButton) {
+        let selected = sender.isSelected
+        favoriteButton.isSelected = !selected
+        self.interactor?.setFavorite(isSelected: favoriteButton.isSelected)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -46,7 +56,6 @@ class PostDetailViewController: UIViewController {
     }
 
     @IBAction func userDetail(_ sender: UIButton) {
-       debugPrint("user Detail")
         let userDetailVc = UserDetailConfiguration.setup(parameters: ["userDetail": user as Any])
         self.navigationController?.pushViewController(userDetailVc, animated: true)
     }
@@ -78,14 +87,15 @@ extension PostDetailViewController {
         if post != nil {
             self.titleLabel?.text = post.title
             self.bodyLabel?.text = post.body
+            self.favoriteButton.isSelected = post.isFav!
         }
     }
 
-    func configureNavigationBar(){
+    func configureNavigationBar() {
         title = "Post Detail"
     }
 
-    func configureTableView(){
+    func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: String(describing: CommentTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: CommentTableViewCell.self))

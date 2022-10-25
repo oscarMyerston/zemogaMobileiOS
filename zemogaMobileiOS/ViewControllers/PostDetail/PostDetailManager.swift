@@ -10,10 +10,18 @@ import Foundation
 protocol IPostDetailManager: AnyObject {
     func getCommentsForPost(postId: Int, completion: @escaping ModelCompletion)
     func getUser(id: Int, completion: @escaping ModelCompletion)
+    func updateFavorite(id: Int, isSelected: Bool)
 
 }
 
 class PostDetailManager: IPostDetailManager {
+
+    private var realmManager: RealmManager
+
+    init(realmManager: RealmManager = RealmManager()) {
+        self.realmManager = realmManager
+    }
+
     func getCommentsForPost(postId: Int, completion: @escaping ModelCompletion) {
         let endpoint = "/posts/\(postId)/comments"
         Connection.sendRequest(endPoint: endpoint) { (response) in
@@ -48,5 +56,9 @@ class PostDetailManager: IPostDetailManager {
                 completion(.failure(error))
             }
         }
+    }
+
+    func updateFavorite(id: Int, isSelected: Bool) {
+        realmManager.updateObject(id, isSelected: isSelected)
     }
 }

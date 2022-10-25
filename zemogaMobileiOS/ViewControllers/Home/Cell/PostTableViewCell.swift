@@ -30,6 +30,11 @@ class PostTableViewCell: UITableViewCell {
 
     func set(posts: HomeModel.HomePost) {
         titleLabel?.text = posts.title
+        if posts.isFav == true {
+            imageFavorite.image = UIImage(named: "star-filled")
+        } else {
+            imageFavorite.image = UIImage(named: "star")
+        }
     }
     
 }

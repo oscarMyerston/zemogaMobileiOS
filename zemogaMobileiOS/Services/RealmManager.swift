@@ -43,9 +43,9 @@ class RealmManager {
         }
     }
 
-    func existsInDB(_ userId: Int) -> Bool {
+    func existsInDB(_ id: Int) -> Bool {
         var exist = false
-        let postLocal = realm.objects(PostLocal.self).filter("id == \(userId)")
+        let postLocal = realm.objects(PostLocal.self).filter("id == \(id)")
         if postLocal.count > 0 {
             exist = true
         }
@@ -73,5 +73,14 @@ class RealmManager {
         }
     }
 
-    
+    func updateObject(_ id: Int, isSelected: Bool) {
+
+        let post = realm.objects(PostLocal.self).filter("id = %@", id)
+        if let post = post.first {
+            try! realm.write {
+                post.isFav = isSelected
+            }
+        }
+    }
+
 }

@@ -26,7 +26,8 @@ class Mapper {
             userId: postLocal.userId,
             id: postLocal.id,
             title: postLocal.title,
-            body: postLocal.body
+            body: postLocal.body,
+            isFav: postLocal.isFav
         )
         return post
     }

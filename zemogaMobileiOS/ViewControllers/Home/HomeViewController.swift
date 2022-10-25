@@ -26,7 +26,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        showLoading(to: view)
         configureNavigation()
 
     }
@@ -36,6 +35,9 @@ class HomeViewController: UIViewController {
     }
 
     private func loadPosts() {
+        if posts.isEmpty {
+            showLoading(to: view)
+        }
         interactor?.loadPost()
     }
 
@@ -52,6 +54,7 @@ class HomeViewController: UIViewController {
 
     @objc func loadAllPost() {
         if posts.isEmpty {
+            showLoading(to: view)
             interactor?.loadPost()
         }
     }

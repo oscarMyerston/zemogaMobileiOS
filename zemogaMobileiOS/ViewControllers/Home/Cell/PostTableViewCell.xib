@@ -41,7 +41,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="imageFavorite" destination="QKm-vu-l95" id="j9Z-Y4-HbW"/>
+                <outlet property="imageFavorite" destination="QKm-vu-l95" id="ZpS-7X-zcu"/>
                 <outlet property="titleLabel" destination="WvR-BS-pTS" id="CUO-rs-JZz"/>
             </connections>
             <point key="canvasLocation" x="53.846153846153847" y="20.616113744075829"/>

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostDetailViewController" customModule="pruebaZemoga" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostDetailViewController" customModule="zemogaMobileiOS" customModuleProvider="target">
             <connections>
                 <outlet property="bodyLabel" destination="XAK-yw-j64" id="hiw-ak-d1k"/>
-                <outlet property="likeImage" destination="z6F-ky-k0O" id="rqv-ys-8Os"/>
+                <outlet property="favoriteButton" destination="55m-3b-HM5" id="9K3-oW-Qwi"/>
                 <outlet property="tableView" destination="YBU-2g-0Em" id="uTR-fx-GWM"/>
                 <outlet property="titleLabel" destination="gy8-xz-kBG" id="1No-yD-oBg"/>
                 <outlet property="userButton" destination="iig-Vd-IbN" id="u4b-F4-Hhf"/>
@@ -35,15 +35,18 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like-empty" translatesAutoresizingMaskIntoConstraints="NO" id="z6F-ky-k0O">
-                    <rect key="frame" x="335" y="77" width="24" height="32"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55m-3b-HM5">
+                    <rect key="frame" x="335" y="80" width="20" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="24" id="skf-um-Wme"/>
-                        <constraint firstAttribute="height" constant="32" id="zUW-Tr-sjE"/>
+                        <constraint firstAttribute="width" constant="20" id="kjd-gd-gW0"/>
+                        <constraint firstAttribute="height" constant="20" id="xTr-MJ-vYc"/>
                     </constraints>
-                </imageView>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button" image="star-empty"/>
+                    <state key="selected" image="star-filled" backgroundImage="star-filled"/>
+                </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YBU-2g-0Em">
-                    <rect key="frame" x="20" y="258" width="335" height="389"/>
+                    <rect key="frame" x="20" y="238" width="335" height="409"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAK-yw-j64">
@@ -81,21 +84,20 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="XAK-yw-j64" firstAttribute="top" secondItem="gy8-xz-kBG" secondAttribute="bottom" constant="10" id="0s9-qw-Ors"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z6F-ky-k0O" secondAttribute="trailing" constant="16" id="263-VA-NJw"/>
                 <constraint firstItem="gy8-xz-kBG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="9do-56-pYi"/>
                 <constraint firstItem="hAk-Ti-1wW" firstAttribute="top" secondItem="iig-Vd-IbN" secondAttribute="bottom" constant="10" id="9mM-Sr-P3o"/>
-                <constraint firstItem="z6F-ky-k0O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="335" id="BFp-xw-bwD"/>
                 <constraint firstItem="iig-Vd-IbN" firstAttribute="top" secondItem="XAK-yw-j64" secondAttribute="bottom" constant="7" id="H6w-Og-MUB"/>
-                <constraint firstItem="z6F-ky-k0O" firstAttribute="leading" secondItem="XAK-yw-j64" secondAttribute="trailing" id="I9s-3y-zxS"/>
-                <constraint firstItem="z6F-ky-k0O" firstAttribute="top" secondItem="gy8-xz-kBG" secondAttribute="bottom" constant="36.5" id="KhM-j6-okR"/>
+                <constraint firstItem="55m-3b-HM5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-20" id="Hmf-hh-DK3"/>
                 <constraint firstItem="hAk-Ti-1wW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Q2z-wj-8Zp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gy8-xz-kBG" secondAttribute="trailing" constant="20" id="Qyg-vH-uxh"/>
                 <constraint firstItem="XAK-yw-j64" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Tk9-yZ-yzi"/>
+                <constraint firstItem="55m-3b-HM5" firstAttribute="top" secondItem="gy8-xz-kBG" secondAttribute="bottom" constant="39.5" id="VpI-nr-B6C"/>
                 <constraint firstItem="YBU-2g-0Em" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XzK-XB-vwv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YBU-2g-0Em" secondAttribute="bottom" constant="20" id="Zjy-cb-fdJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hAk-Ti-1wW" secondAttribute="trailing" constant="20" id="duB-em-iY3"/>
+                <constraint firstItem="55m-3b-HM5" firstAttribute="leading" secondItem="XAK-yw-j64" secondAttribute="trailing" id="eH7-gX-Lk3"/>
                 <constraint firstItem="gy8-xz-kBG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gXL-u1-SSa"/>
-                <constraint firstItem="YBU-2g-0Em" firstAttribute="top" secondItem="hAk-Ti-1wW" secondAttribute="bottom" constant="50" id="qUG-sU-aIJ"/>
+                <constraint firstItem="YBU-2g-0Em" firstAttribute="top" secondItem="hAk-Ti-1wW" secondAttribute="bottom" constant="30" id="qUG-sU-aIJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YBU-2g-0Em" secondAttribute="trailing" constant="20" id="ubQ-Ec-1tS"/>
                 <constraint firstItem="iig-Vd-IbN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="zhp-Sj-jq5"/>
             </constraints>
@@ -103,7 +105,8 @@
         </view>
     </objects>
     <resources>
-        <image name="like-empty" width="32" height="32"/>
+        <image name="star-empty" width="32" height="32"/>
+        <image name="star-filled" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

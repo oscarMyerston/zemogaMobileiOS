@@ -12,7 +12,7 @@ protocol IPostDetailInteractor: AnyObject {
     func getCommentsForPost()
     func getPostSelected() -> HomeModel.HomePost
     func getUser()
-
+    func setFavorite(isSelected: Bool)
 }
 
 class PostDetailInteractor: IPostDetailInteractor {
@@ -94,4 +94,8 @@ class PostDetailInteractor: IPostDetailInteractor {
 
     }
 
+    func setFavorite(isSelected: Bool) {
+        let result = getPostSelected()
+        self.manager?.updateFavorite(id:  result.id!, isSelected: isSelected)
+    }
 }
