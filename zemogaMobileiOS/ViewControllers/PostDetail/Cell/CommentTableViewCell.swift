@@ -24,7 +24,7 @@ class CommentTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func configure(comment: Comment){
+    func configure(comment: Comment) {
         titleLabel.text = comment.name
         userLabel.text = comment.email
         bodyLabel.text = comment.body

@@ -7,21 +7,6 @@
 
 import UIKit
 
-struct PostDetailModel {	
-	struct Request {
-		// do someting...
-
-		func parameters() -> [String: Any]? {
-			// do someting...
-			return nil
-		}
-	}
-
-	struct Response {
-		// do someting...
-	}
-}
-
 struct Comment: Codable {
     var postId: Int?
     var id: Int?
