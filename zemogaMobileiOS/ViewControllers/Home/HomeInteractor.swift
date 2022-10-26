@@ -33,13 +33,9 @@ class HomeInteractor: IHomeInteractor {
                 case .success(let result):
                     if let data: [HomeModel.HomePost] = result as? [HomeModel.HomePost] {
                         if !data.isEmpty {
-                            DispatchQueue.main.async {
-                                self.presenter?.posts(parameters: data)
-                            }
+                            self.presenter?.posts(parameters: data)
                         } else {
-                            DispatchQueue.main.async {
-                                self.getPosts()
-                            }
+                            self.getPosts()
                         }
                     }
                 case .failure(let error):
@@ -63,14 +59,10 @@ class HomeInteractor: IHomeInteractor {
             case .success(let result):
                 if let data: [HomeModel.HomePost] = result as? [HomeModel.HomePost] {
                     if !data.isEmpty {
-                        DispatchQueue.main.async {
-                            self.presenter?.posts(parameters: data)
-                        }
-                        DispatchQueue.main.async {
-                          _ = data.map({
-                                self.addPostsToDB(with: $0)
-                            })
-                        }
+                        self.presenter?.posts(parameters: data)
+                        _ = data.map({
+                            self.addPostsToDB(with: $0)
+                        })
                     }
                 }
             case .failure(let error):
